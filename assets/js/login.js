@@ -62,6 +62,7 @@ $(function () {
             layui.layer.msg(res.message);
             if (res.status === 0) {
                 location.href = '/index.html'
+                window.localStorage.setItem('token', res.token)
             }
         })
 
